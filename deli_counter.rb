@@ -10,15 +10,9 @@ puts "The line is currently: #{new_katz_deli.join(" ")}"
 end
 end
 
-def take_a_number(katz_deli,name)
-if katz_deli.count == 0
-    katz_deli<<name
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
-else
-  katz_deli.each do |name|
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
-end
-end
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 # Write your code here.
 def now_serving(katz_deli)
