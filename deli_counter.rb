@@ -26,6 +26,7 @@ if katz_deli.count == 0
   katz_deli<<name
 puts "There is nobody waiting to be served!"
 else
+  katz_deli<<name
   puts "Currently serving #{katz_deli.first}."
   katz_deli.shift
 end
