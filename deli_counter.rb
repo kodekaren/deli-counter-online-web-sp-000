@@ -13,20 +13,18 @@ end
 def take_a_number(katz_deli,name)
 if katz_deli.count == 0
     katz_deli<<name
-  puts "Welcome, #{name}. You are number 1 in line."
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 else
   katz_deli.each do |name|
-  puts "Welcome #{name}. You are number #{katz_deli.size} in line."
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 end
 end
 # Write your code here.
 def now_serving(katz_deli)
 if katz_deli.count == 0
-  katz_deli<<name
 puts "There is nobody waiting to be served!"
 else
-  katz_deli<<name
   puts "Currently serving #{katz_deli.first}."
   katz_deli.shift
 end
