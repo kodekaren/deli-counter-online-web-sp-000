@@ -16,14 +16,14 @@ if katz_deli.count == 0
   puts "Welcome, #{name}. You are number 1 in line."
 else
   katz_deli.each do |name|
-  puts "Welcome #{name}. You are number #{katz_deli.size} in line."
+  puts "Welcome #{name}. You are number #{katz_deli.size} in line."  
 end
 end
 end
 # Write your code here.
 def now_serving(katz_deli)
 if katz_deli.count == 0
-puts "The line is empty"
+puts "There is nobody waiting to be served!"
 else
 end
 end
